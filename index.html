@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://pro.font-awesome.com/releases/v5.10.0/css/all.css" />
+  </head>
+  <body>
+
+    <!-- -----left part start----- -->
+    <div class="container">
+      <h1 class="h1"><span class="h1Span">green chilli</span> Restaurant</h1>
+
+      <!-- *****-----1st Part full cart start-----***** -->
+      <div class="fullCart">
+        <!-- image -->
+        <div class="cartImg">
+          <img src="01.jpg" alt="" />
+        </div>
+
+        <!-- cartTitle -->
+        <div class="cartTitle">
+          <h3>Barger</h3>
+          <h3>Size : 6'</h3>
+
+               <!-- id="price" id এটা দেয়া হয়েছে -->
+          <h3 class="price">Price : <span id="price"> 600 </span> Taka</h3>
+
+          <!-- cartTitleAmount -->
+          <div class="cartTitleAmount">
+                <!--onclick="increment('inputCount', 'price', 'priceAmount')" para pass করা হয়েছে ।  -->
+            <p class="titlePlus"  onclick="increment('inputCount','price', 'priceAmount')"><span id="titlePlus"> + </span></p>
+            <input type="number" class="inputCount"  value="0" id="inputCount" />
+
+               <!--onclick="increment('inputCount', 'price', 'priceAmount')" para pass করা হয়েছে ।  -->
+            <p class="titleSub" onclick="decrement('inputCount','price', 'priceAmount')"><span id="titlePlus"> - </span></p>
+          </div>
+          <br />
+
+              <!-- id="priceAmount" id এটা দেয়া হয়েছে  -->
+          <span class="spanAmount">Your Items <span id="priceAmount">00</span> Taka</span>
+        </div>
+      </div>
+      <!-- *****-----full cart end-----***** -->
+
+
+
+
+
+
+      <hr class="hrStyle" />
+
+
+
+
+
+
+      <!-- *****-----2nd Part full cart start-----***** -->
+      <div class="fullCart">
+        <!-- image -->
+        <div class="cartImg">
+          <img src="02.jpg" alt="" />
+        </div>
+
+        <!-- cartTitle -->
+        <div class="cartTitle">
+          <h3>Pizza</h3>
+          <h3>Size : 12'</h3>
+
+              <!-- id="price1" id এটা দেয়া হয়েছে -->
+          <h3 class="price">Price :<span id="price1"> 600 </span></h3>
+
+          <!-- cartTitleAmount -->
+          <div class="cartTitleAmount">
+
+              <!--onclick="increment('inputCount1', 'price1', 'priceAmount1')" para pass করা হয়েছে ।  -->
+            <p class="titlePlus" onclick="increment('inputCount1', 'price1', 'priceAmount1')"><span> + </span></p>
+            <input type="number" class="inputCount" value="0" id="inputCount1" />
+                <!--onclick="increment('inputCount1', 'price1', 'priceAmount1')" para pass করা হয়েছে ।  -->
+            <p class="titleSub" onclick="decrement('inputCount1','price1', 'priceAmount1')"><span> - </span></p>
+          </div>
+          <br />
+              <!-- id="priceAmount1" id এটা দেয়া হয়েছে  -->
+          <span class="spanAmount">Your Items <span id="priceAmount1">00</span> Taka</span>
+        </div>
+      </div>
+      <!-- *****-----full cart end-----***** -->
+
+    </div>
+    <!-- -----laft part end----- -->
+
+
+
+
+
+
+
+
+    
+
+    <!-- -----right part start----- -->
+    <div class="fixed">
+        <h3 class="fixedHeading">The total amount of</h3>
+        <h4>Product Amount : <span id="productAmount">00</span> Taka</h4>
+        <h4>Delivery Charge : <span id="charge"> 20 </span> Taka</h4>
+        <br>
+        ---------------------------------------------------------
+        <br>
+
+        <h3>Total Amount : <span id="allTotalAmount">00</span> Taka</h3>
+        <br>
+        <div class="kupon" id="kupon">
+            <h4>Kupon Code</h4>
+            <h5>Your Code Is: TA__ni__M</h5>
+            <input type="text" id="kuponInput" placeholder="Enter your code">
+            <button id="applyBtn">Apply</button>
+        </div>
+    </div>
+     <!-- -----right part end----- -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
